@@ -11,9 +11,9 @@ interface IType {
 export const ProjectConst: IType = {
   project: {
     categories: [
-      { name: 'All', id: 1 },
-      { name: 'Funded', id: 2 },
-      { name: 'Closed', id: 3 },
+      { id: 1, name: 'All', title: 'All' },
+      { id: 2, name: 'Funded', title: 'Funded' },
+      { id: 3, name: 'Closed', title: 'Closed' },
     ],
   },
   tabItems: [

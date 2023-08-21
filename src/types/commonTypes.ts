@@ -80,22 +80,23 @@ type AttributeT = {
 };
 
 type ProjectT = {
-  id: number;
-  title: string;
+  id?: number;
+  title?: string;
   description?: string;
-  slug: string;
-  main_photo: string;
+  slug?: string;
+  main_photo?: string;
   location?: string;
   lat?: number;
   long?: number;
   body?: string;
   min_investment?: number;
-  subscribed: number;
-  attributes: AttributeT[];
-  category: {
+  subscribed?: number;
+  attributes?: AttributeT[];
+  category?: {
     id: number;
     title: string;
   };
+  categories: Array<{ name: string; id: number; title: string }>;
   photos?: Array<{
     name: string;
     photo: string;
